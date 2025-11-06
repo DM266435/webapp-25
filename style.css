@@ -1,0 +1,75 @@
+body {
+    background-color: gray;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    margin-bottom: 0;
+}
+img {
+    display: block;
+    border-radius: 10%;
+    margin: 100px auto;
+}
+p {
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 50px;
+    position: relative;
+    top: -50px;
+    margin-bottom: 0;
+}
+#hexInput {
+  /* Dimensions */
+  width: 70%; /* Sets the width */
+  height: 25pxpx; /* Sets the height, overrides 'rows' */
+
+  /* Visual Box Styling */
+  border: 2px solid #3498db; /* Adds a blue border */
+  padding: 10px; /* Space inside the box */
+  background-color: #f4f4f4; /* Light gray background */
+  border-radius: 5px; /* Rounds the corners */
+
+  /* Font and Text */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  display: inline-block;
+  position: relative;
+  top: -25px;
+}
+button {
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+}
+.back-button {
+  /* Style as a button */
+  display: inline-block; /* Allows width/padding and sits nicely next to text */
+  padding: 10px 20px;
+  margin-top: 20px;
+  
+  /* Appearance */
+  background-color: #3498db; /* Blue background */
+  color: white; /* White text */
+  text-decoration: none; /* Removes the default underline */
+  border-radius: 5px; /* Rounded corners */
+  border: none;
+  cursor: pointer;
+  
+  /* Text */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #2980b9; /* Slightly darker blue on hover */
+}
+
+.b1 {
+    margin-top: 25%;
+}

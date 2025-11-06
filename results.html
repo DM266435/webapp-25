@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Results</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="b1">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Conversion Result</h1>
+        <p>The Hex code was converted to:</p>
+        <div id="rgbOutput" style="font-size: 24px; font-weight: bold;"></div>
+
+        <script>
+            // Function to get the query parameter from the URL
+            function getQueryParam(name) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(name);
+            }
+
+            const rgbValue = getQueryParam('rgb');
+            const outputElement = document.getElementById('rgbOutput');
+
+            if (rgbValue) {
+                // Decode the RGB value and display it
+                const decodedRgb = decodeURIComponent(rgbValue);
+                outputElement.textContent = `rgb(${decodedRgb})`;
+
+                // OPTIONAL: Apply the color to the page background
+                document.body.style.backgroundColor = `rgb(${decodedRgb})`;
+            } else {
+                outputElement.textContent = 'Error: No RGB value found.';
+            }
+        </script>
+        <a href="index.html" class="back-button">Go Back to Converter</a>
+        
+        <script src="scripts.js" async defer></script>
+    </body>
+</html>
