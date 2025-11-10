@@ -18,7 +18,18 @@
         <![endif]-->
         <h1>Conversion Result</h1>
         <p>The Hex code was converted to:</p>
-        <div id="rgbOutput" style="font-size: 24px; font-weight: bold;"></div>
+        <div id="rgbOutput" style="
+            font-size: 24px; 
+            font-weight: bold; 
+            padding: 10px;
+            
+            /* --- Added Styles Below --- */
+            background-color: white; /* Sets the background to white */
+            display: inline-block;   /* Makes the background only wrap the text content */
+            border-radius: 4px;      /* Adds a slight roundness to the corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+            ">
+        </div>
 
         <script>
             // Function to get the query parameter from the URL
